@@ -1,0 +1,26 @@
+<html>  
+<head></head>  
+<body>  
+<script>  
+try{  
+let a = prompt("Enter a number : ");    
+if(a>2)  {
+document.write("ok");  
+document.write("<br>");
+}
+else
+{
+throw new Error("Numeric value is not a valid number input");
+document.write("<br>");
+}
+}  
+catch(Error){  
+document.write("Error found "+Error.message);  
+document.write("<br>");
+}  
+finally{  
+document.write("Thankyou !! ");  
+}  
+</script>  
+</body>  
+</html>   
